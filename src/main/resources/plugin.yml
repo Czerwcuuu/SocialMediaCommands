@@ -1,0 +1,15 @@
+name: SocialMediaCommands
+version: ${project.version}
+main: stylowamc.socialmediacommands.SocialMediaCommands
+api-version: 1.13
+authors: [Czerwcuu]
+description: With that plugin you can show your socialmedias link using simple commans.
+commands:
+  discord:
+    description: Pokazuje link do naszego discorda
+  youtube:
+    description: Pokazuje link do kanalu Stylowego
+  facebook:
+    description: Pokazuje link do naszego facebooka
+  dzialka:
+    description: Pokazuje link do poradnika jak zrobic dzialke
