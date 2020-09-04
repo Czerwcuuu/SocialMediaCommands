@@ -12,8 +12,9 @@ public class Cuboid implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args){
         Player p = (Player) sender;
+        SocialMediaCommands plugin = SocialMediaCommands.getInstance();
         if(p.hasPermission(Permissions.COMMANDS_USE_PERM)){
-            sender.sendMessage(ChatColor.translateAlternateColorCodes('&',SocialMediaCommands.getInternalConfig().getCuboidMes()));
+            plugin.getServer().broadcastMessage(ChatColor.translateAlternateColorCodes('&',SocialMediaCommands.getInternalConfig().getCuboidMes()));
             return true;
         }
         else{

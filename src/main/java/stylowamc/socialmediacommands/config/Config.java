@@ -50,7 +50,7 @@ public class Config {
         config.set(DISCORD,"&3&lNasz Discord:&6&l[Przykladowy discord]");
         config.set(YOUTUBE,"&3&lNasz kanal Youtube:&6&l[Przykładowy YT]");
         config.set(FACEBOOK,"&3&lNasz Facebook:&6&l[Przykładowy FB]");
-        config.set(CUBOID,"&3&lJeśli chcesz zrobić działkę, obejrzyj -> :&6&l [Przykładowy FILM]");
+        config.set(CUBOID,"&3&lJeśli chcesz zrobić działkę, obejrzyj -> &6&l [Przykładowy FILM]");
 
         SocialMediaCommands.getInstance().saveConfig();
     }

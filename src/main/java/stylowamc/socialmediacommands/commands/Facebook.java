@@ -12,8 +12,9 @@ public class Facebook implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args){
         Player p = (Player) sender;
+        SocialMediaCommands plugin = SocialMediaCommands.getInstance();
         if(p.hasPermission(Permissions.COMMANDS_USE_PERM)){
-            sender.sendMessage(ChatColor.translateAlternateColorCodes('&',SocialMediaCommands.getInternalConfig().getFacebookMes()));
+            plugin.getServer().broadcastMessage(ChatColor.translateAlternateColorCodes('&',SocialMediaCommands.getInternalConfig().getFacebookMes()));
             return true;
         }
         else{
